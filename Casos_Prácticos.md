@@ -106,4 +106,6 @@ Para que nuestra página web sea segura vamos a crear una contraseña privada co
 
 <img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20133536.png>
 
+Modificamos el archivo de web1 para que use la contraseña creada
 
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20134031.png>
