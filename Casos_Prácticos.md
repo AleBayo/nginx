@@ -64,7 +64,9 @@ Para confirmar que lo estamos haciendo bien vamos a nuiestro navegador y buscamo
 
 Modificamos los sitios que están habilitados a entrar a cada web `nano web1` y `nano web2`
 
-<img src=
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20125742.png>
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20125931.png>
 
 ## g) Autentificación, autorizacición y control de acceso
 
