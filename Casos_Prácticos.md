@@ -66,14 +66,44 @@ Modificamos los sitios que están habilitados a entrar a cada web `nano web1` y 
 
 <img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20125742.png>
 
-<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20125931.png>
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20131316.png>
+
+Ahora modificamos el archivo hosts con las ip's que permitimos
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20130205.png>
+
+Vamos a comprobar que la red interna puede acceder a las dos páginas web, para ello vamos a usar el comando `curl --interface enp0s8 http://www.web1.org` y `curl --interface enp0s8 http://www.web2.org`, si no esta instalado el comando curl lo instalamos con `apt-get install curl`
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20130804.png>
 
 ## g) Autentificación, autorizacición y control de acceso
 
+> www.web1.org contiene un directorio llamado privado. Configura una autentificación básica. Sólo puede acceder usuarios válidos.
+
+Vamos a poner una contraseña para que solo puedan acceder los usuarios admitidos
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20132041.png>
+
+Ahora comprobamos que te pida acceso
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20132241.png>
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20132456.png>
 
 ## h) Autentificación, Autorización y Control de acceso
 
+> www.web1.org contiene un directorio llamado privado. Desde la red externa pide autorización y desde la red interna NO.
+
+Volvemos a modificar el archivo de web1 para volver a dar acceso
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20132815.png>
 
 ## i) Seguridad
+
+> Configura el sitio virtual www.web1.org para que el acceso sea seguro.
+
+Para que nuestra página web sea segura vamos a crear una contraseña privada con el comando `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfigned.key -out /etc/ssl/certs/selfsigned.crt`
+
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20133536.png>
 
 
