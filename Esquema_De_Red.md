@@ -19,4 +19,4 @@ Despues de la configuración vamos a reinniciar el servicio con el comando `syst
 
 Para confirmar que todo ha ido bien hacemos el comando `ip a` para confirmar que las ip's se han puesto bien
 
-<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20114621.png>
+<img src=https://github.com/AleBayo/nginx/blob/main/img/Captura%20de%20pantalla%202025-02-02%20115522.png>
