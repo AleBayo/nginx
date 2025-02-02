@@ -5,4 +5,4 @@
 3.  [Esquema de red](https://github.com/AleBayo/nginx/blob/main/Esquema_De_Red.md)
 4.  [Instalacion](https://github.com/AleBayo/nginx/blob/main/instalación.md)
 5.  [Casos prácticos](https://github.com/AleBayo/nginx/blob/main/Casos_Prácticos.md)
-6.  Conclusiones
+6.  [Conclusiones](https://github.com/AleBayo/nginx/blob/main/Conclusiones.md)
